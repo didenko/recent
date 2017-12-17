@@ -37,7 +37,7 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "recent <folder>",
+	Use:   "recent <path>",
 	Short: "List a number of recently modified files ",
 	Long: `The recent utility collects a number of most recently modified
 files from the specified directory tree. Current directory is used by default.`,
@@ -58,7 +58,7 @@ func init() {
 	rootCmd.PersistentFlags().IntVarP(&limit, "limit", "n", 10, "a number of recent files to list")
 	rootCmd.PersistentFlags().BoolVarP(&withdate, "date", "d", false, "include time in file timestamps output")
 	rootCmd.PersistentFlags().BoolVarP(&withtime, "time", "t", false, "include time in file timestamps output")
-	rootCmd.PersistentFlags().BoolVarP(&withmill, "mill", "m", false, "include milliseconts in file timestamps output - oly if time included as well")
+	rootCmd.PersistentFlags().BoolVarP(&withmill, "mill", "m", false, "include milliseconts in file timestamps output - only if time included as well")
 }
 
 func setup(cmd *cobra.Command, args []string) {
