@@ -56,7 +56,7 @@ func Execute() {
 
 func init() {
 	rootCmd.PersistentFlags().IntVarP(&limit, "limit", "n", 10, "a number of recent files to list")
-	rootCmd.PersistentFlags().BoolVarP(&withdate, "date", "d", false, "include time in file timestamps output")
+	rootCmd.PersistentFlags().BoolVarP(&withdate, "date", "d", false, "include date in file timestamps output")
 	rootCmd.PersistentFlags().BoolVarP(&withtime, "time", "t", false, "include time in file timestamps output")
 	rootCmd.PersistentFlags().BoolVarP(&withmill, "mill", "m", false, "include milliseconts in file timestamps output - only if time included as well")
 }
