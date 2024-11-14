@@ -1,6 +1,0 @@
-language: go
-go_import_path: github.com/didenko/recent
-
-go:
-  - 1.9.x
-  - master
