@@ -6,13 +6,13 @@ Usage:
 
 Flags:
 
-  `-d`, `--date`        include time in file timestamps output
+  `-d`, `--date`        include date in file timestamps output
 
   `-h`, `--help`        help for recent
 
   `-n`, `--limit <int>`   a number of recent files to list (default 10)
 
-  `-m`, `--mill`        include milliseconts in file timestamps output - oly if time included as well
+  `-m`, `--mill`        include milliseconts in file timestamps output - only if time included as well
 
   `-t`, `--time`        include time in file timestamps output
 
